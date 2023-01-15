@@ -1,0 +1,99 @@
+body {
+  background-image: url("https://blog.trello.com/hs-fs/Trello_Blog_Illos_(1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-weight: bold;
+}
+
+:root {
+  --color: #000;
+  --text-transform: capitalize;
+  --font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+form #main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  border: 1px solid red;
+  height: 95vh;
+  width: 80vh;
+  font-family: var(--font-family);
+  background: linear-gradient(160deg, white, lightgreen, blue);
+  color: var(--color);
+  border-radius: 30px;
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#main {
+  box-shadow: 0px 5px 15px black;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  line-height: 1.4rem;
+  margin: 0 auto;
+}
+
+form #main input {
+  width: 200px;
+  border-radius: 5px;
+  text-align: start;
+  margin: 15px 13px;
+  border: none;
+}
+
+:-ms-input-placeholder {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-color: red;
+}
+
+form #main #btn {
+  width: 150px;
+  padding: 4px 5px;
+  margin: 5px 2px;
+  font-size: 20px;
+  text-transform: var(--text-transform);
+  background-color: black;
+  color: #fff;
+  border-radius: 30px;
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+form #main #btn:hover {
+  background-color: transparent;
+  color: var(--color);
+}
+
+#main .img {
+  padding-top: 10px;
+  margin: 4px 20px;
+}
+
+/* Medium Screens */
+@media screen and (max-width: 700px) {
+  form #main {
+    transform: scale(0.8);
+  }
+}
+
+/* Smaller screens */
+@media screen and (max-width: 500px) {
+  form #main {
+    transform: scale(0.7);
+    width: 70vh;
+    box-shadow: 0px 30px 30px rebeccapurple;
+    font-size: 18px;
+    opacity: 0.9;
+  }
+}
